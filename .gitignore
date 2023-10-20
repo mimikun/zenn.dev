@@ -1,2 +1,6 @@
+# Common to all platforms
+*.zip
+*.patch
+*.patch.gpg
 node_modules
-.DS_Store
+.textlintcache
