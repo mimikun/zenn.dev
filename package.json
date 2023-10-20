@@ -1,18 +1,23 @@
 {
   "name": "zenn.dev",
   "version": "1.0.0",
-  "description": "",
+  "description": "zenn article and book repo",
   "main": "index.js",
   "scripts": {
-    "start": "npx zenn preview",
-    "article": "npx zenn new:article --slug",
-    "book": "npx zenn new:book --slug"
+    "start": "zenn preview",
+    "article": "zenn new:article --slug",
+    "book": "zenn new:book --slug",
+    "lint": "textlint --cache ./*.md"
   },
   "keywords": [],
   "author": "Yuto Tanaka <karaage_nennen@icloud.com>",
   "license": "MIT",
   "dependencies": {
-    "zenn-cli": "^0.1.55-alpha.0"
+    "zenn-cli": "^0.1.147"
+  },
+  "devDependencies": {
+    "textlint": "^13.3.3",
+    "textlint-rule-preset-ja-technical-writing": "^7.0.0"
   },
   "repository": "git@github.com:mimikun/zenn.dev.git"
 }
