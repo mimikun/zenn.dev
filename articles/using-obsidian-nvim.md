@@ -3,7 +3,7 @@ title: "obsidian.nvim: NeovimでObsidianを使うための最高のプラグイ�
 emoji: "🎉"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Obsidian", "Neovim"]
-published: false
+published: true
 published_at: 2023-12-16 00:00
 ---
 
