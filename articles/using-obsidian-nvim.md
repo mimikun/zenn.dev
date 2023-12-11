@@ -21,22 +21,24 @@ Obsidian歴は1年半と少し。
 
 ## obsidian.nvim とは
 
+[epwalsh](https://github.com/epwalsh) さん作のNeovim プラグイン。
+
+Obsidianにはvimモードがありますが、自分の思想的にvimモードで使うのは受け入れがたいので
+このプラグインを使ってノートを書くことがまれによくあります。
+
 ## obsidian.nvim のインストール方法
 
-[公式ドキュメント](https://github.com/epwalsh/obsidian.nvim?tab=readme-ov-file#install-and-configure) に書いてあるので見たほうが早いです。
+[公式ドキュメント](https://github.com/epwalsh/obsidian.nvim?tab=readme-ov-file#install-and-configure) に書いてあるので見たほうが早いですが、一応自分の設定を書いておきます。
 
 自分の設定は以下の通り。
+長くなるので直リンク貼ります。
 
 https://github.com/mimikun/dotfiles/blob/master/dot_config/nvim/lua/plugins/obsidian-nvim.lua
 
 ## obsidian.nvim の使い方
-- `:ObsidianOpen [QUERY]` to open a note in the Obsidian app. This command has
-    one optional argument: a query used to resolve the note to open by ID, path, or
-    alias. If not given, the note corresponding to the current buffer is opened.
 
-- `:ObsidianNew [TITLE]` to create a new note. This command has one optional
-    argument: the title of the new note.
-
+- `:ObsidianNew [TITLE]`
+    - TITLE として渡した文字列でノートを作成する
 - `:ObsidianQuickSwitch` to quickly switch to another note in your vault,
     searching by its name using ripgrep <https://github.com/BurntSushi/ripgrep>
     with telescope.nvim <https://github.com/nvim-telescope/telescope.nvim>, fzf.vim
@@ -47,16 +49,6 @@ https://github.com/mimikun/dotfiles/blob/master/dot_config/nvim/lua/plugins/obsi
 
 - `:ObsidianBacklinks` for getting a location list of references to the current
     buffer.
-
-- `:ObsidianToday [OFFSET]` to open/create a new daily note. This command also
-    takes an optional offset in days, e.g. use `:ObsidianToday -1` to go to
-    yesterday’s note. Unlike `:ObsidianYesterday` and `:ObsidianTomorrow` this
-    command does not differentiate between weekdays and weekends.
-
-- `:ObsidianYesterday` to open/create the daily note for the previous working
-    day.
-
-- `:ObsidianTomorrow` to open/create the daily note for the next working day.
 
 - `:ObsidianTemplate [NAME]` to insert a template from the templates folder,
     selecting from a list using telescope.nvim
@@ -103,6 +95,15 @@ https://github.com/mimikun/dotfiles/blob/master/dot_config/nvim/lua/plugins/obsi
 ### 本日のデイリーノートを開く
 
 `:ObsidianToday` で本日のデイリーノートを開けます。
+
+### 昨日のデイリーノートを開く
+
+`:ObsidianYesterday` で昨日のデイリーノートを開けます。
+
+### 翌日のデイリーノートを開く
+
+`:ObsidianTomorrow` で翌日のデイリーノートを開けます。
+
 
 ## おわりに
 
