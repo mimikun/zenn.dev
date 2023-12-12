@@ -22,9 +22,11 @@ Obsidian歴は1年半と少し。
 ## obsidian.nvim とは
 
 [epwalsh](https://github.com/epwalsh) さん作のNeovim プラグイン。
+あくまで補助的に使うことを目的に作られているそう。
 
 Obsidianにはvimモードがありますが、自分の思想的にvimモードで使うのは受け入れがたいので
 このプラグインを使ってノートを書くことがまれによくあります。
+また、特定の環境ではなぜか再起動や電源投入後の初回起動がうまくいかないので、ターミナルから使えるようにしたいケースが(自分の中で)あります。
 
 ## obsidian.nvim のインストール方法
 
@@ -37,13 +39,29 @@ https://github.com/mimikun/dotfiles/blob/master/dot_config/nvim/lua/plugins/obsi
 
 ## obsidian.nvim の使い方
 
-- `:ObsidianNew [TITLE]`
-    - TITLE として渡した文字列でノートを作成する
-- `:ObsidianQuickSwitch` to quickly switch to another note in your vault,
-    searching by its name using ripgrep <https://github.com/BurntSushi/ripgrep>
-    with telescope.nvim <https://github.com/nvim-telescope/telescope.nvim>, fzf.vim
-    <https://github.com/junegunn/fzf.vim>, or fzf-lua
-    <https://github.com/ibhagwan/fzf-lua>.
+コアプラグインで使える機能は一通り使えるようになっています。
+
+### Obsidianアプリ自体を開く
+
+`:ObsidianOpen` でObsidianアプリ自体を開けます。
+
+### 本日のデイリーノートを開く
+
+`:ObsidianToday` で本日のデイリーノートを開けます。
+
+### 昨日のデイリーノートを開く
+
+`:ObsidianYesterday` で昨日のデイリーノートを開けます。
+
+### 翌日のデイリーノートを開く
+
+`:ObsidianTomorrow` で翌日のデイリーノートを開けます。
+
+### ノートを素早く切り替える
+`:ObsidianQuickSwitch` で素早くノートを切り替えられます。
+
+`ripgrep`, `telescope.nvim`, `fzf.vim`, `fzf-lua` といい感じのファジーファインダーは一通り使えるので
+いい感じに検索できます。
 
 - `:ObsidianFollowLink` to follow a note reference under the cursor.
 
@@ -73,7 +91,9 @@ https://github.com/mimikun/dotfiles/blob/master/dot_config/nvim/lua/plugins/obsi
     selection of text. This command has one optional argument: the title of the new
     note. If not given, the selected text will be used as the title.
 
-- `:ObsidianWorkspace [NAME]` to switch to another workspace.
+### ワークスペース(保管庫)を切り替えたいとき
+
+`:ObsidianWorkspace [NAME]` でワークスペースを切り替えできます。
 
 - `:ObsidianPasteImg [IMGNAME]` to paste an image from the clipboard into the
     note at the cursor position by saving it to the vault and adding a markdown
@@ -88,26 +108,12 @@ https://github.com/mimikun/dotfiles/blob/master/dot_config/nvim/lua/plugins/obsi
     first by appending "–dry-run" to the command, e.g. `:ObsidianRename new-id
     --dry-run`.
 
-### Obsidianアプリ自体を開く
-
-`:ObsidianOpen` でObsidianアプリ自体を開けます。
-
-### 本日のデイリーノートを開く
-
-`:ObsidianToday` で本日のデイリーノートを開けます。
-
-### 昨日のデイリーノートを開く
-
-`:ObsidianYesterday` で昨日のデイリーノートを開けます。
-
-### 翌日のデイリーノートを開く
-
-`:ObsidianTomorrow` で翌日のデイリーノートを開けます。
-
 
 ## おわりに
 
-Neovim上ですべてを行いたいという人向けではありますが、なかなか良い選択肢ではないでしょうか？
+Neovim上ですべてを行いたいという人向けではありますが、なかなか良い選択肢ではないかと思います。
 
 Obsidianで扱うファイルはただのmarkdownファイルとその他色々なので、もしObsidian Appが提供されなくなったとしても、このように第三者のソフトウェアやプラグインで容易に再現できる点が最高です。
+
+今後はSiluhouetteをLua移植してより便利にしていけたらなと思っています。
 
