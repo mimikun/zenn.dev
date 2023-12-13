@@ -16,6 +16,7 @@ published_at: 2023-12-16 00:00
 https://mstdn.mimikun.jp/@mimikun
 
 6年ほど自鯖でFediverseをやっている一般人です。
+つい最近6周年を迎えたので祝ってください。
 
 Obsidian歴は1年半と少し。
 
@@ -84,42 +85,19 @@ https://github.com/mimikun/dotfiles/blob/master/dot_config/nvim/lua/plugins/obsi
 
 ![template](https://private-user-images.githubusercontent.com/13450321/290211239-c115d77b-2369-4c6c-8851-049ea5fc0da1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI0NzU3NjgsIm5iZiI6MTcwMjQ3NTQ2OCwicGF0aCI6Ii8xMzQ1MDMyMS8yOTAyMTEyMzktYzExNWQ3N2ItMjM2OS00YzZjLTg4NTEtMDQ5ZWE1ZmMwZGExLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjEzVDEzNTEwOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI5Njk1MzQ2MGY4OWE1YjBjNTNiNTM3NThkOGE5ZTA3ZTViNTAzZjM2MGQ5MWQ5YjgyMzYyODNmZWQzMjNhZGEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.IRv1BQKGus9LaTApYd85YZAE4AgYFBZLihXzCHxXLxI)
 
-- `:ObsidianSearch [QUERY]` to search for notes in your vault using ripgrep
-    <https://github.com/BurntSushi/ripgrep> with telescope.nvim
-    <https://github.com/nvim-telescope/telescope.nvim>, fzf.vim
-    <https://github.com/junegunn/fzf.vim>, or fzf-lua
-    <https://github.com/ibhagwan/fzf-lua>. This command has one optional argument:
-    a search query to start with.
+### ノートを検索する
 
-- `:ObsidianLink [QUERY]` to link an inline visual selection of text to a note.
-    This command has one optional argument: a query that will be used to resolve
-    the note by ID, path, or alias. If not given, the selected text will be used as
-    the query.
+`:ObsidianSearch [QUERY]` で全文検索ができます。
 
-- `:ObsidianLinkNew [TITLE]` to create a new note and link it to an inline visual
-    selection of text. This command has one optional argument: the title of the new
-    note. If not given, the selected text will be used as the title.
+![obssearch](https://private-user-images.githubusercontent.com/13450321/290216658-731dad14-acb8-4954-83a3-efe30709b0de.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDI0NzY4ODQsIm5iZiI6MTcwMjQ3NjU4NCwicGF0aCI6Ii8xMzQ1MDMyMS8yOTAyMTY2NTgtNzMxZGFkMTQtYWNiOC00OTU0LTgzYTMtZWZlMzA3MDliMGRlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjEzVDE0MDk0NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM1ZmRhYzEzMTY3YTIwODg4YmJjNDQwNGM2MzIzODEzMDllZmZiMDU1NDI5MWNhYzhmZjU5M2RlNDhhZGVlOGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.v1Ar15O0HjcogbYOqqeYh8V37xrHXE91PXqVBpqgX1s)
 
 ### ワークスペース(保管庫)を切り替えたいとき
 
 `:ObsidianWorkspace [NAME]` でワークスペースを切り替えできます。
 
-自分は保管庫は1つしか持っていないのでどんな感じか不明です。
+### クリップボードにある画像を貼り付けたいとき
 
-
-- `:ObsidianPasteImg [IMGNAME]` to paste an image from the clipboard into the
-    note at the cursor position by saving it to the vault and adding a markdown
-    image link. You can configure the default folder to save images to with the
-    `attachments.img_folder` option.
-
-- `:ObsidianRename [NEWNAME] [--dry-run]` to rename the note of the current
-    buffer or reference under the cursor, updating all backlinks across the vault.
-    Since this command is still relatively new and could potentially write a lot of
-    changes to your vault, I highly recommend committing the current state of your
-    vault (if you’re using version control) before running it, or doing a dry-run
-    first by appending "–dry-run" to the command, e.g. `:ObsidianRename new-id
-    --dry-run`.
-
+`:ObsidianPasteImg [IMGNAME]` でクリップボードにある画像を保管庫のアタッチメントフォルダに入れて、markdown形式のリンクを挿入してくれます。
 
 ## おわりに
 
