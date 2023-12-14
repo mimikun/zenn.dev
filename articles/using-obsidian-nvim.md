@@ -80,6 +80,10 @@ end,
 
 `:ObsidianToday` で本日のデイリーノートを開けます。
 
+以下で設定しています。
+
+https://github.com/mimikun/dotfiles/blob/66600b12018c29ca4a41131cf27c58bfbec313d3/dot_config/nvim/lua/plugins/obsidian-nvim.lua#L193-L199
+
 ### 昨日のデイリーノートを開く
 
 `:ObsidianYesterday` で昨日のデイリーノートを開けます。
@@ -91,19 +95,19 @@ end,
 ### ノートを素早く切り替える
 `:ObsidianQuickSwitch` で素早くノートを切り替えられます。
 
-![quickswitch]()
+![quickswitch](/images/using-obsidian-nvim/obsidianquickswitch.jpg)
 
 ### カーソルの下にあるノートのリンクをたどる
 
 `:ObsidianFollowLink` で別タブにてそのノートが開かれます。
 
-![followlink]()
+![followlink](/images/using-obsidian-nvim/obsidianfollowlink.jpg)
 
 ### バックリンクを取得する
 
 `:ObsidianBacklinks` でバックリンクを取得できます。
 
-![backlink]()
+![backlink](/images/using-obsidian-nvim/obsidianbacklink.jpg)
 
 ### テンプレートを挿入する
 
