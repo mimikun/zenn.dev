@@ -111,6 +111,12 @@ end,
 
 ![template](/images/using-obsidian-nvim/obsidiantemplate.jpg)
 
+以下で設定しています。
+
+https://github.com/mimikun/dotfiles/blob/66600b12018c29ca4a41131cf27c58bfbec313d3/dot_config/nvim/lua/plugins/obsidian-nvim.lua#L59-L192
+
+二重波括弧の中にsubstitutionsにある関数の結果が入るといった感じです。
+
 ### ノートを検索する
 
 `:ObsidianSearch [QUERY]` で全文検索ができます。
