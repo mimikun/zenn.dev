@@ -36,7 +36,7 @@ Obsidianにはvimモードがありますが、自分の思想的にvimモード
 自分の設定は以下の通り。
 長くなるので直リンク貼ります。
 
-https://github.com/mimikun/dotfiles/blob/master/dot_config/nvim/lua/plugins/obsidian-nvim.lua
+https://github.com/mimikun/dotfiles/blob/v2023.12.14/dot_config/nvim/lua/plugins/obsidian-nvim.lua
 
 ## obsidian.nvim の使い方
 
