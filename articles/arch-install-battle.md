@@ -3,7 +3,7 @@ title: "ArchInstallBattle(2023/12 最新)"
 emoji: "🐧"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Arch"]
-published: false
+published: true
 ---
 
 ThinkPad E14 Gen5(Intel) にArch Linuxをインストールしていく。
