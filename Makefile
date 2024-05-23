@@ -73,7 +73,7 @@ lint : textlint typo-check shell-lint
 ## Run textlint
 .PHONY : textlint
 textlint :
-	pnpm run lint
+	pnpm run textlint
 
 ## Run typos
 .PHONY : typo-check
@@ -97,6 +97,20 @@ format : shell-format
 .PHONY : shell-format
 shell-format :
 	bash utils/format.sh
+
+## Run git cleanfetch
+.PHONY : clean-fetch
+clean-fetch :
+	git cleanfetch
+
+## Run git pull
+.PHONY : pull
+pull :
+	git pull
+
+## Run workday morning routine
+.PHONY : morning-routine
+morning-routine : clean-fetch delete-branch pull patch-branch
 
 ## Show help
 .PHONY : help
