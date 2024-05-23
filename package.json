@@ -7,17 +7,25 @@
     "start": "zenn preview",
     "article": "zenn new:article --slug",
     "book": "zenn new:book --slug",
-    "lint": "textlint --cache ./*.md"
+    "textlint": "textlint --cache ./*.md",
+    "lint:prettier": "prettier --check .",
+    "fmt:prettier": "prettier --write .",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "Yuto Tanaka <karaage_nennen@icloud.com>",
   "license": "MIT",
   "dependencies": {
-    "zenn-cli": "^0.1.150"
+    "zenn-cli": "^0.1.153"
   },
   "devDependencies": {
-    "textlint": "^14.0.0",
-    "textlint-rule-preset-ja-technical-writing": "^10.0.0"
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/types": "^19.0.3",
+    "husky": "^9.0.11",
+    "prettier": "3.2.5",
+    "textlint": "^14.0.4",
+    "textlint-rule-preset-ja-technical-writing": "^10.0.1"
   },
   "repository": "git@github.com:mimikun/zenn.dev.git"
 }
