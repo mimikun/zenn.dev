@@ -1,8 +1,8 @@
 ---
 title: "How to use ollama for windows(beta) from WSL"
 emoji: "🤖"
-type: "tech" # tech: 技術記事 / idea: アイデア
-topics: []
+type: "idea" # tech: 技術記事 / idea: アイデア
+topics: ["ollama","llm"]
 published: false
 ---
 
@@ -10,11 +10,10 @@ published: false
 具体的にはGitHub Copilotと同等のやり取りができるか。
 
 ## 結論
-WIP
 
-でもたぶんこれ:
 無理。大人しく高スペックのマシンを用意しよう。
 あるいはGitHub CopilotやChatGPTが使えるよう根回ししよう。
+~~最終手段: 転~~
 
 ## 検証環境
 - ホスト
@@ -101,4 +100,19 @@ ollama run llama3.2:3b
 
 ただ都度都度APIを叩くのも面倒だし、使ってる感じがしないので、Neovimプラグインを使う。
 
+[codecompanion.nvim](https://github.com/olimorris/codecompanion.nvim) を使う。
+
+自分の設定は以下参照。
+
+https://github.com/mimikun/dotfiles/blob/master/dot_config/nvim/lua/plugins/codecompanion-nvim.lua
+https://github.com/mimikun/dotfiles/blob/master/dot_config/nvim/lua/plugins/configs/codecompanion-nvim/cmds.lua
+https://github.com/mimikun/dotfiles/blob/master/dot_config/nvim/lua/plugins/configs/codecompanion-nvim/dependencies.lua
+https://github.com/mimikun/dotfiles/blob/master/dot_config/nvim/lua/plugins/configs/codecompanion-nvim/keys.lua
+https://github.com/mimikun/dotfiles/blob/master/dot_config/nvim/lua/plugins/configs/codecompanion-nvim/opts.lua
+
+重要なのはこの部分。
+
+https://github.com/mimikun/dotfiles/blob/a114d278337da7ff95675f11f3a471b66d60658f/dot_config/nvim/lua/plugins/configs/codecompanion-nvim/opts.lua#L10-L24
+
+この設定をしてNeovimで `:CodeCompanionChat` と打つ。
 
