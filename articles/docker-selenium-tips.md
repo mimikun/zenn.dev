@@ -1,9 +1,9 @@
 ---
 title: "低スペック環境でSeleniumのDockerイメージを使うときのTIPS"
 emoji: "🐋"
-type: "tech" # tech: 技術記事 / idea: アイデア
-topics: []
-published: false
+type: "idea" # tech: 技術記事 / idea: アイデア
+topics: ["docker","wsl"]
+published: true
 ---
 
 ほぼ自分用
