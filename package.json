@@ -16,16 +16,16 @@
   "author": "Yuto Tanaka <karaage_nennen@icloud.com>",
   "license": "MIT",
   "dependencies": {
-    "zenn-cli": "^0.1.158"
+    "zenn-cli": "^0.1.159"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.6.1",
-    "@commitlint/config-conventional": "^19.6.0",
-    "@commitlint/types": "^19.5.0",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@commitlint/types": "^19.8.0",
     "husky": "^9.1.7",
     "prettier": "3.4.2",
-    "textlint": "^14.4.0",
-    "textlint-rule-preset-ja-technical-writing": "^10.0.1"
+    "textlint": "^14.6.0",
+    "textlint-rule-preset-ja-technical-writing": "^10.0.2"
   },
   "repository": "git@github.com:mimikun/zenn.dev.git"
 }
