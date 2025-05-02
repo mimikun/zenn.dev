@@ -3,7 +3,7 @@ title: "Hydra.nvimでシンプルなメニューを作る"
 emoji: "🐍"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["neovim"]
-published: false
+published: true
 ---
 
 ## Hydra.nvimとは
