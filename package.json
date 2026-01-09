@@ -16,7 +16,7 @@
   "author": "Yuto Tanaka <karaage_nennen@icloud.com>",
   "license": "MIT",
   "dependencies": {
-    "zenn-cli": "^0.2.0"
+    "zenn-cli": "^0.3.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.0.0",
