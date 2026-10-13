@@ -19,9 +19,9 @@
     "zenn-cli": "^0.2.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.0.0",
-    "@commitlint/config-conventional": "^20.0.0",
-    "@commitlint/types": "^20.0.0",
+    "@commitlint/cli": "^21.0.0",
+    "@commitlint/config-conventional": "^21.0.0",
+    "@commitlint/types": "^21.0.0",
     "husky": "^9.1.7",
     "prettier": "3.7.4",
     "textlint": "^15.0.0",
